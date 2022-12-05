@@ -1,59 +1,27 @@
 <!DOCTYPE html>
+<!-- 
 
-<!-- Work done on this file
+    Work completed on this file:
 
-    1. Added ALT Tags to all images
-       I have tested this by using both inspector to check the NAME of the image under the accessibility section AND
-       I switched off images within google chrome by opening  chrome://settings/content/images and using the option
-       Don't allow sites to show images, and the alt tags were displayed in the place of the images.
+    1. Added ALT tags to all images
 
+ -->
 
-    2. I spent a long time wondering about the background image within the CSS, if it should have an ALT tag. I have researched this 
-       extensively, and I am of the following view:
-
-            "CSS background images which are by definition only of aesthetic value - not visual content of the document itself. If you
-            need to put an image in the page that has meaning then use an IMG element and give it an alternative test in the alt attribute."
-
-            Reference: https://stackoverflow.com/questions/4216035/css-background-image-alt-attribute - the answer by Cory on 18/11/10 @ 15:07
-            Accessed: 02/12/22 @ 22:41
-            
-    3. Changed DIV tags for 
-            header
-            main
-            aside
-            footer
-
-            also introduced
-
-            section
-
-    4. Changed the H2 tag within the footer to H4 to ensure the flow of H is correct througout the page
-
--->
 
 <html lang="en-gb">
-
-<!-- Head -->
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Added the following two lines as they appeared to be missing -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Added a meaningful title-->
-    <title>Code Refactor Challenge Website</title> 
+    <!-- Add a meaningful title -->
+    <title>website</title> 
 </head>
 
-<!-- Body -->
-
 <body>
-    
-    <!-- Header and Navigation -->
-
-    <header class="header">
+    <!-- Look for places to add sematic elements -->
+    <div class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <nav>
+        <div>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -65,66 +33,46 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </nav>
-    </header>
-    
-    <!-- Hero Image -->
-
-    <div class="hero">
-        <!-- Hero image is as a background in the CSS, a background image does not by definition provide context so it does 
-             not require an ALT tag see the notes above. -->
+        </div>
     </div>
-
-    <!-- Main Content of the Website -->
-
-    <!-- Changed the DIV to Main -->
-    <main class="content">
-        <!-- Changed DIV to Sections -->
-        <section class="search-engine-optimization">
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/search-engine-optimization.jpg" alt="Search Engine Optimisation" class="float-left" />
+    <!-- image is applied in the css file -->
+    <div class="hero"></div>
+    <!-- Div houses the main content -->
+    <div class="content">
+        <div class="search-engine-optimization">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="Image of Notebook with SEO on the Front" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
-        </section>
-        <section id="online-reputation-management" class="online-reputation-management">
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/online-reputation-management.jpg" alt="Online Reputation Management" class="float-right" />
+        </div>
+        <div id="online-reputation-management" class="online-reputation-management">
+            <img src="./assets/images/online-reputation-management.jpg" alt="Image of Laptop with Reputation on Screen with a Graph" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
-        </section>
-        <section id="social-media-marketing" class="social-media-marketing">
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/social-media-marketing.jpg" alt="Social Media Marketing" class="float-left" />
+        </div>
+        <div id="social-media-marketing" class="social-media-marketing">
+            <img src="./assets/images/social-media-marketing.jpg" alt="Image of Table with Placemats with Social Media Logos on them" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </section>
-    </main>
-
-    <!-- Side Element - Right Hand Side -->
-
-    <!-- Changed from a DIV to aside -->
-    
-    <aside class="benefits">
-
-        <!-- Changed the DIV for a Section -->
-        <section class="benefit-lead">
+        </div>
+    </div>
+    <!-- Section located off to the side -->
+    <div class="benefits">
+        <img class="benefit-lead">
             <h3>Lead Generation</h3>
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/lead-generation.png" alt="Lead Generation" />
+            <img src="./assets/images/lead-generation.png" alt="Icon to show Lead Generation a Cog on top of a Funnel leading to a Sale" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </section>
-        <section class="benefit-brand">
+        </div>
+        <div class="benefit-brand">
             <h3>Brand Awareness</h3>
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/brand-awareness.png" alt="Brand Awareness" />
+            <img src="./assets/images/brand-awareness.png" alt="Icon to show a brand awareness a lighbulb ontop of a shirt and tie" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
@@ -132,26 +80,18 @@
         
         <section class="benefit-cost">
             <h3>Cost Management</h3>
-            <!-- Added ALT tag to the Image -->
-            <img src="./assets/images/cost-management.png" alt="Cost Management"></img>
+            <img src="./assets/images/cost-management.png" alt="Icon to show Cost Management a Cog with dollar signs in front" />
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </section>
-    </aside>
-
-
-    <!-- Footer Element -->
-
-    <!-- Changed the H tag from H2 to H4 -->
-
-    <footer class="footer">
-        <h4>Made with ❤️️ by Horiseon</h4>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </footer>
-
+    </div>
 </body>
 
 </html>

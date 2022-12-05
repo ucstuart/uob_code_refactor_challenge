@@ -24,9 +24,7 @@ body {
     color: #d9dcd6;
 }
 
-/* Changed the following thee styles from .header div ... to .header nav (as we are now using nav) */
-
-.header nav {
+.header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -34,11 +32,11 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+.header div ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+.header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -197,8 +195,6 @@ p {
     text-align: center;
 }
 
-/* Changed the footer style to h4 */
-
-.footer h4 {
+.footer h2 {
     font-size: 20px;
 }
